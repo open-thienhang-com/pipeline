@@ -1,0 +1,128 @@
+[2023-08-04T14:40:28.234+0000] {processor.py:157} INFO - Started process (PID=772) to work on /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:40:28.236+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_data_miration_dag.py for tasks to queue
+[2023-08-04T14:40:28.237+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:40:28.237+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:40:28.309+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:40:28.300+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_miration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_miration_dag.py", line 24, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:40:28.311+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:40:28.330+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_data_miration_dag.py took 0.102 seconds
+[2023-08-04T14:41:46.842+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:41:46.859+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_data_miration_dag.py for tasks to queue
+[2023-08-04T14:41:46.868+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:41:46.861+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:41:46.958+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:41:46.956+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_miration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_miration_dag.py", line 24, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:41:46.958+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:41:46.971+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_data_miration_dag.py took 0.147 seconds
+[2023-08-04T14:42:17.430+0000] {processor.py:157} INFO - Started process (PID=61) to work on /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:42:17.434+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_data_miration_dag.py for tasks to queue
+[2023-08-04T14:42:17.435+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:42:17.435+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:42:17.487+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:42:17.485+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_miration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_miration_dag.py", line 24, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:42:17.488+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:42:17.497+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_data_miration_dag.py took 0.080 seconds
+[2023-08-04T14:42:47.968+0000] {processor.py:157} INFO - Started process (PID=100) to work on /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:42:47.970+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_data_miration_dag.py for tasks to queue
+[2023-08-04T14:42:47.972+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:42:47.972+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:42:48.025+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:42:48.022+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_miration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_miration_dag.py", line 24, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:42:48.027+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:42:48.036+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_data_miration_dag.py took 0.099 seconds
+[2023-08-04T14:43:18.453+0000] {processor.py:157} INFO - Started process (PID=122) to work on /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:43:18.455+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_data_miration_dag.py for tasks to queue
+[2023-08-04T14:43:18.456+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:43:18.456+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:43:18.498+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:43:18.496+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_miration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_miration_dag.py", line 24, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:43:18.499+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:43:18.507+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_data_miration_dag.py took 0.060 seconds
+[2023-08-04T14:43:48.992+0000] {processor.py:157} INFO - Started process (PID=153) to work on /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:43:48.994+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_data_miration_dag.py for tasks to queue
+[2023-08-04T14:43:48.996+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:43:48.995+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:43:49.042+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:43:49.040+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_miration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_miration_dag.py", line 24, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:43:49.043+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:43:49.052+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_data_miration_dag.py took 0.067 seconds
+[2023-08-04T14:44:19.527+0000] {processor.py:157} INFO - Started process (PID=184) to work on /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:44:19.532+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_data_miration_dag.py for tasks to queue
+[2023-08-04T14:44:19.541+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:44:19.535+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:44:19.633+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:44:19.629+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_miration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_miration_dag.py", line 24, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:44:19.635+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:44:19.658+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_data_miration_dag.py took 0.151 seconds
+[2023-08-04T14:44:50.124+0000] {processor.py:157} INFO - Started process (PID=205) to work on /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:44:50.127+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_data_miration_dag.py for tasks to queue
+[2023-08-04T14:44:50.133+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:44:50.132+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:44:50.169+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:44:50.166+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_data_miration_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_data_miration_dag.py", line 24, in <module>
+    bash_command='python /opt/airflow/dags/tomtom_data_migration.py --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:44:50.170+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_data_miration_dag.py
+[2023-08-04T14:44:50.179+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_data_miration_dag.py took 0.059 seconds

@@ -1,0 +1,15 @@
+[2023-08-06T06:01:12.185+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: send_message_telegram.send_message manual__2023-08-06T06:01:10.321574+00:00 [queued]>
+[2023-08-06T06:01:12.197+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: send_message_telegram.send_message manual__2023-08-06T06:01:10.321574+00:00 [queued]>
+[2023-08-06T06:01:12.198+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-06T06:01:12.216+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): send_message> on 2023-08-06 06:01:10.321574+00:00
+[2023-08-06T06:01:12.224+0000] {standard_task_runner.py:57} INFO - Started process 5648 to run task
+[2023-08-06T06:01:12.244+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'send_message_telegram', 'send_message', 'manual__2023-08-06T06:01:10.321574+00:00', '--job-id', '126', '--raw', '--subdir', 'DAGS_FOLDER/template/send_telegram_message.py', '--cfg-path', '/tmp/tmpxtwzfy1n']
+[2023-08-06T06:01:12.248+0000] {standard_task_runner.py:85} INFO - Job 126: Subtask send_message
+[2023-08-06T06:01:12.357+0000] {task_command.py:410} INFO - Running <TaskInstance: send_message_telegram.send_message manual__2023-08-06T06:01:10.321574+00:00 [running]> on host 8e7e814b48ed
+[2023-08-06T06:01:12.499+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='send_message_telegram' AIRFLOW_CTX_TASK_ID='send_message' AIRFLOW_CTX_EXECUTION_DATE='2023-08-06T06:01:10.321574+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-06T06:01:10.321574+00:00'
+[2023-08-06T06:01:12.502+0000] {logging_mixin.py:150} INFO - Hello Hoai Nam
+[2023-08-06T06:01:13.571+0000] {logging_mixin.py:150} INFO - {'ok': True, 'result': {'message_id': 5, 'from': {'id': 6126031521, 'is_bot': True, 'first_name': 'HoaiNam_Bot', 'username': 'hoainam5301_bot'}, 'chat': {'id': 1622695632, 'first_name': 'Hoài', 'last_name': 'Nam', 'username': 'HNam04', 'type': 'private'}, 'date': 1691301673, 'text': 'sdfsdfsdfsdf'}}
+[2023-08-06T06:01:13.583+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-08-06T06:01:13.611+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=send_message_telegram, task_id=send_message, execution_date=20230806T060110, start_date=20230806T060112, end_date=20230806T060113
+[2023-08-06T06:01:13.652+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-06T06:01:13.673+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,128 @@
+[2023-08-04T14:40:28.250+0000] {processor.py:157} INFO - Started process (PID=773) to work on /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:40:28.251+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_dag.py for tasks to queue
+[2023-08-04T14:40:28.252+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:40:28.252+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:40:28.308+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:40:28.300+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_dag.py", line 30, in <module>
+    '--date {{ ds }} --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:40:28.310+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:40:28.331+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_dag.py took 0.085 seconds
+[2023-08-04T14:41:46.876+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:41:46.878+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_dag.py for tasks to queue
+[2023-08-04T14:41:46.889+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:41:46.887+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:41:46.958+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:41:46.955+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_dag.py", line 30, in <module>
+    '--date {{ ds }} --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:41:46.958+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:41:46.983+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_dag.py took 0.112 seconds
+[2023-08-04T14:42:17.435+0000] {processor.py:157} INFO - Started process (PID=62) to work on /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:42:17.438+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_dag.py for tasks to queue
+[2023-08-04T14:42:17.439+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:42:17.439+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:42:17.487+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:42:17.485+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_dag.py", line 30, in <module>
+    '--date {{ ds }} --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:42:17.489+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:42:17.497+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_dag.py took 0.067 seconds
+[2023-08-04T14:42:47.973+0000] {processor.py:157} INFO - Started process (PID=101) to work on /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:42:47.975+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_dag.py for tasks to queue
+[2023-08-04T14:42:47.976+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:42:47.975+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:42:48.025+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:42:48.022+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_dag.py", line 30, in <module>
+    '--date {{ ds }} --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:42:48.027+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:42:48.036+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_dag.py took 0.077 seconds
+[2023-08-04T14:43:18.457+0000] {processor.py:157} INFO - Started process (PID=123) to work on /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:43:18.458+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_dag.py for tasks to queue
+[2023-08-04T14:43:18.459+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:43:18.459+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:43:18.497+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:43:18.495+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_dag.py", line 30, in <module>
+    '--date {{ ds }} --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:43:18.498+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:43:18.507+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_dag.py took 0.054 seconds
+[2023-08-04T14:43:48.997+0000] {processor.py:157} INFO - Started process (PID=154) to work on /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:43:48.998+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_dag.py for tasks to queue
+[2023-08-04T14:43:49.000+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:43:49.000+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:43:49.042+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:43:49.040+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_dag.py", line 30, in <module>
+    '--date {{ ds }} --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:43:49.043+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:43:49.052+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_dag.py took 0.059 seconds
+[2023-08-04T14:44:19.529+0000] {processor.py:157} INFO - Started process (PID=185) to work on /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:44:19.532+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_dag.py for tasks to queue
+[2023-08-04T14:44:19.534+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:44:19.533+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:44:19.633+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:44:19.629+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_dag.py", line 30, in <module>
+    '--date {{ ds }} --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:44:19.635+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:44:19.659+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_dag.py took 0.144 seconds
+[2023-08-04T14:44:50.124+0000] {processor.py:157} INFO - Started process (PID=206) to work on /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:44:50.127+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tomtom_dag.py for tasks to queue
+[2023-08-04T14:44:50.133+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:44:50.132+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:44:50.169+0000] {logging_mixin.py:150} INFO - [2023-08-04T14:44:50.167+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tomtom_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tomtom_dag.py", line 30, in <module>
+    '--date {{ ds }} --connection %s' % Variable.get("data_dev_connection")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 142, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable data_dev_connection does not exist'
+[2023-08-04T14:44:50.170+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tomtom_dag.py
+[2023-08-04T14:44:50.178+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tomtom_dag.py took 0.059 seconds
