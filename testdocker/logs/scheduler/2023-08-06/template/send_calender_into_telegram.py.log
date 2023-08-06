@@ -1,0 +1,147 @@
+[2023-08-06T06:23:28.341+0000] {processor.py:157} INFO - Started process (PID=6951) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:23:28.343+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:23:28.344+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:23:28.344+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:23:28.371+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:23:28.731+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:23:28.731+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:23:28.777+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:23:28.777+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:23:28.802+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.467 seconds
+[2023-08-06T06:23:59.663+0000] {processor.py:157} INFO - Started process (PID=6972) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:23:59.665+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:23:59.666+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:23:59.665+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:23:59.676+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:23:59.705+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:23:59.705+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:23:59.724+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:23:59.724+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:23:59.736+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.077 seconds
+[2023-08-06T06:24:30.163+0000] {processor.py:157} INFO - Started process (PID=7005) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:24:30.164+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:24:30.166+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:30.165+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:24:30.175+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:24:30.188+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:30.188+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:24:30.207+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:30.207+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:24:30.218+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.061 seconds
+[2023-08-06T06:25:00.640+0000] {processor.py:157} INFO - Started process (PID=7038) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:25:00.641+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:25:00.642+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:00.642+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:25:00.651+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:25:00.729+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:00.729+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:25:00.745+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:00.745+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:25:00.757+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.120 seconds
+[2023-08-06T06:25:31.282+0000] {processor.py:157} INFO - Started process (PID=7060) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:25:31.286+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:25:31.288+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:31.287+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:25:31.302+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:25:31.327+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:31.327+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:25:31.343+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:31.343+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:25:31.355+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.080 seconds
+[2023-08-06T06:26:47.129+0000] {processor.py:157} INFO - Started process (PID=7082) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:26:47.131+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:26:47.132+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.132+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:26:47.144+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:26:47.172+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.171+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:26:47.188+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.188+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:26:47.199+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.074 seconds
+[2023-08-06T06:27:17.643+0000] {processor.py:157} INFO - Started process (PID=7111) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:27:17.646+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:27:17.648+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.647+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:27:17.671+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:27:17.784+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.783+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:27:17.802+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.802+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:27:17.816+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.185 seconds
+[2023-08-06T06:28:44.568+0000] {processor.py:157} INFO - Started process (PID=7141) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:28:44.571+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:28:44.572+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.572+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:28:44.588+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:28:44.615+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.615+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:28:44.644+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.644+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:28:44.665+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.106 seconds
+[2023-08-06T06:29:15.194+0000] {processor.py:157} INFO - Started process (PID=7164) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:29:15.196+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:29:15.198+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:29:15.197+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:29:15.217+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:29:15.314+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:29:15.314+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:29:15.330+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:29:15.330+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:29:15.344+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.157 seconds
+[2023-08-06T06:29:45.804+0000] {processor.py:157} INFO - Started process (PID=7195) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:29:45.807+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:29:45.809+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:29:45.808+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:29:45.835+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:29:45.876+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:29:45.876+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:29:45.910+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:29:45.910+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:29:45.937+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.138 seconds
+[2023-08-06T06:30:16.437+0000] {processor.py:157} INFO - Started process (PID=7224) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:30:16.439+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:30:16.441+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:30:16.440+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:30:16.464+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:30:16.605+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:30:16.604+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:30:16.627+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:30:16.627+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:30:16.642+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.213 seconds
+[2023-08-06T06:30:47.088+0000] {processor.py:157} INFO - Started process (PID=7247) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:30:47.091+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:30:47.093+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:30:47.092+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:30:47.106+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:30:47.133+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:30:47.133+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:30:47.151+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:30:47.150+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:30:47.163+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.082 seconds
+[2023-08-06T06:31:17.613+0000] {processor.py:157} INFO - Started process (PID=7277) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:31:17.615+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:31:17.618+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:31:17.616+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:31:17.633+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:31:17.725+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:31:17.725+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:31:17.741+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:31:17.741+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:31:17.753+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.148 seconds
+[2023-08-06T06:31:47.809+0000] {processor.py:157} INFO - Started process (PID=7298) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:31:47.815+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:31:47.816+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:31:47.816+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:31:47.828+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:31:47.858+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:31:47.858+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:31:47.875+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:31:47.875+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:31:47.888+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.083 seconds
+[2023-08-06T06:32:18.396+0000] {processor.py:157} INFO - Started process (PID=7329) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:32:18.399+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:32:18.401+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:32:18.401+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:32:18.425+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:32:18.532+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:32:18.532+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:32:18.547+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:32:18.547+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:32:18.561+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.173 seconds
+[2023-08-06T06:32:49.123+0000] {processor.py:157} INFO - Started process (PID=7360) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:32:49.149+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:32:49.153+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:32:49.152+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:32:49.189+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:32:49.231+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:32:49.231+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:32:49.260+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:32:49.259+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:32:49.280+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.182 seconds
+[2023-08-06T06:33:19.766+0000] {processor.py:157} INFO - Started process (PID=7381) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:33:19.769+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:33:19.772+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:33:19.771+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:33:19.790+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:33:19.881+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:33:19.881+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:33:19.898+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:33:19.898+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:33:19.909+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.152 seconds
+[2023-08-06T06:33:50.393+0000] {processor.py:157} INFO - Started process (PID=7412) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:33:50.396+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:33:50.397+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:33:50.397+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:33:50.410+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:33:50.439+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:33:50.439+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:33:50.458+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:33:50.458+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:33:50.495+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.109 seconds
+[2023-08-06T06:34:20.982+0000] {processor.py:157} INFO - Started process (PID=7441) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:34:20.984+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:34:20.987+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:34:20.987+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:34:21.017+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:34:21.129+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:34:21.129+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:34:21.145+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:34:21.145+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:34:21.158+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.183 seconds
+[2023-08-06T06:34:51.577+0000] {processor.py:157} INFO - Started process (PID=7471) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:34:51.579+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:34:51.581+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:34:51.580+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:34:51.602+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:34:51.640+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:34:51.639+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:34:51.664+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:34:51.664+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:34:51.679+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.108 seconds
+[2023-08-06T06:35:22.244+0000] {processor.py:157} INFO - Started process (PID=7494) to work on /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:35:22.247+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/send_calender_into_telegram.py for tasks to queue
+[2023-08-06T06:35:22.249+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:35:22.248+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:35:22.268+0000] {processor.py:836} INFO - DAG(s) dict_keys(['send_message_telegram']) retrieved from /opt/airflow/dags/template/send_calender_into_telegram.py
+[2023-08-06T06:35:22.352+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:35:22.352+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:35:22.369+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:35:22.368+0000] {dag.py:3508} INFO - Setting next_dagrun for send_message_telegram to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:35:22.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/send_calender_into_telegram.py took 0.144 seconds
