@@ -29489,3 +29489,71 @@ File Path                                                  PID    Runtime      #
 /opt/airflow/dags/template/send_telegram_message.py                                 1           0  0.13s           2023-08-06T06:23:25
 /opt/airflow/dags/template/example_create_dynamic_dag.py                            3           0  0.40s           2023-08-06T06:23:17
 ================================================================================
+[2023-08-06T06:24:17.922+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/template/hnam_test_dag.py                 6992  0.01s             1           0  0.15s           2023-08-06T06:23:47
+/opt/airflow/dags/template/send_calender_into_telegram.py                           1           0  0.10s           2023-08-06T06:23:59
+/opt/airflow/dags/template/send_telegram_message.py                                 1           0  0.10s           2023-08-06T06:23:55
+/opt/airflow/dags/template/example_create_dynamic_dag.py    6993  0.00s             3           0  0.14s           2023-08-06T06:23:47
+================================================================================
+[2023-08-06T06:24:48.382+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/template/hnam_test_dag.py                 7026  0.01s             1           0  0.12s           2023-08-06T06:24:18
+/opt/airflow/dags/template/send_calender_into_telegram.py                           1           0  0.09s           2023-08-06T06:24:30
+/opt/airflow/dags/template/send_telegram_message.py                                 1           0  0.18s           2023-08-06T06:24:26
+/opt/airflow/dags/template/example_create_dynamic_dag.py    7027  0.01s             3           0  0.13s           2023-08-06T06:24:18
+================================================================================
+[2023-08-06T06:25:18.959+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/template/hnam_test_dag.py                 7048  0.03s             1           0  0.11s           2023-08-06T06:24:48
+/opt/airflow/dags/template/send_calender_into_telegram.py                           1           0  0.14s           2023-08-06T06:25:00
+/opt/airflow/dags/template/send_telegram_message.py                                 1           0  0.09s           2023-08-06T06:24:56
+/opt/airflow/dags/template/example_create_dynamic_dag.py    7049  0.01s             3           0  0.11s           2023-08-06T06:24:48
+================================================================================
+[2023-08-06T06:25:49.503+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/template/hnam_test_dag.py                 7080  0.01s             1           0  0.12s           2023-08-06T06:25:19
+/opt/airflow/dags/template/send_calender_into_telegram.py                           1           0  0.11s           2023-08-06T06:25:31
+/opt/airflow/dags/template/send_telegram_message.py                                 1           0  0.10s           2023-08-06T06:25:27
+/opt/airflow/dags/template/example_create_dynamic_dag.py    7081  0.00s             3           0  0.10s           2023-08-06T06:25:19
+================================================================================
+[2023-08-06T06:27:13.559+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/template/hnam_test_dag.py                                         1           0  0.08s           2023-08-06T06:26:47
+/opt/airflow/dags/template/send_calender_into_telegram.py                           1           0  0.10s           2023-08-06T06:26:47
+/opt/airflow/dags/template/send_telegram_message.py                                 1           0  0.16s           2023-08-06T06:26:47
+/opt/airflow/dags/template/example_create_dynamic_dag.py                            3           0  0.09s           2023-08-06T06:26:47
+================================================================================
+[2023-08-06T06:27:44.385+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/template/hnam_test_dag.py                                         1           0  0.09s           2023-08-06T06:27:17
+/opt/airflow/dags/template/send_calender_into_telegram.py                           1           0  0.23s           2023-08-06T06:27:17
+/opt/airflow/dags/template/send_telegram_message.py                                 1           0  0.14s           2023-08-06T06:27:17
+/opt/airflow/dags/template/example_create_dynamic_dag.py                            3           0  0.09s           2023-08-06T06:27:17
+================================================================================
+[2023-08-06T06:28:44.520+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2023-08-06T06:28:44.539+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags

@@ -4192,3 +4192,66 @@
 [2023-08-06T06:23:47.626+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:23:47.626+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_2 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
 [2023-08-06T06:23:47.628+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:23:47.628+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_3 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
 [2023-08-06T06:23:47.640+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/example_create_dynamic_dag.py took 0.121 seconds
+[2023-08-06T06:24:17.939+0000] {processor.py:157} INFO - Started process (PID=6993) to work on /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:24:17.941+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/example_create_dynamic_dag.py for tasks to queue
+[2023-08-06T06:24:17.944+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:17.943+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:24:17.961+0000] {processor.py:836} INFO - DAG(s) dict_keys(['loop_hello_world_3', 'loop_hello_world_2', 'loop_hello_world_1']) retrieved from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:24:17.995+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:17.994+0000] {dag.py:2742} INFO - Sync 3 DAGs
+[2023-08-06T06:24:18.012+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:18.012+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_1 to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:24:18.015+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:18.015+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_2 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:24:18.017+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:18.017+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_3 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:24:18.032+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/example_create_dynamic_dag.py took 0.096 seconds
+[2023-08-06T06:24:48.395+0000] {processor.py:157} INFO - Started process (PID=7027) to work on /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:24:48.397+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/example_create_dynamic_dag.py for tasks to queue
+[2023-08-06T06:24:48.398+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:48.397+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:24:48.415+0000] {processor.py:836} INFO - DAG(s) dict_keys(['loop_hello_world_3', 'loop_hello_world_1', 'loop_hello_world_2']) retrieved from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:24:48.444+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:48.444+0000] {dag.py:2742} INFO - Sync 3 DAGs
+[2023-08-06T06:24:48.462+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:48.462+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_1 to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:24:48.466+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:48.466+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_2 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:24:48.468+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:48.468+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_3 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:24:48.480+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/example_create_dynamic_dag.py took 0.087 seconds
+[2023-08-06T06:25:18.970+0000] {processor.py:157} INFO - Started process (PID=7049) to work on /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:25:18.972+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/example_create_dynamic_dag.py for tasks to queue
+[2023-08-06T06:25:18.973+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:18.973+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:25:18.987+0000] {processor.py:836} INFO - DAG(s) dict_keys(['loop_hello_world_2', 'loop_hello_world_3', 'loop_hello_world_1']) retrieved from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:25:19.012+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:19.012+0000] {dag.py:2742} INFO - Sync 3 DAGs
+[2023-08-06T06:25:19.029+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:19.029+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_1 to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:25:19.032+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:19.032+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_2 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:25:19.034+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:19.034+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_3 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:25:19.044+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/example_create_dynamic_dag.py took 0.078 seconds
+[2023-08-06T06:25:49.516+0000] {processor.py:157} INFO - Started process (PID=7081) to work on /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:25:49.518+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/example_create_dynamic_dag.py for tasks to queue
+[2023-08-06T06:25:49.519+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:49.519+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:25:49.538+0000] {processor.py:836} INFO - DAG(s) dict_keys(['loop_hello_world_1', 'loop_hello_world_3', 'loop_hello_world_2']) retrieved from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:25:49.573+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:49.573+0000] {dag.py:2742} INFO - Sync 3 DAGs
+[2023-08-06T06:25:49.595+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:49.594+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_1 to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:25:49.598+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:49.598+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_2 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:25:49.600+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:49.600+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_3 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:25:49.610+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/example_create_dynamic_dag.py took 0.100 seconds
+[2023-08-06T06:26:47.294+0000] {processor.py:157} INFO - Started process (PID=7085) to work on /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:26:47.295+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/example_create_dynamic_dag.py for tasks to queue
+[2023-08-06T06:26:47.296+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.296+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:26:47.306+0000] {processor.py:836} INFO - DAG(s) dict_keys(['loop_hello_world_3', 'loop_hello_world_2', 'loop_hello_world_1']) retrieved from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:26:47.332+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.332+0000] {dag.py:2742} INFO - Sync 3 DAGs
+[2023-08-06T06:26:47.348+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.348+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_1 to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:26:47.351+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.351+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_2 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:26:47.353+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.353+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_3 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:26:47.363+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/example_create_dynamic_dag.py took 0.072 seconds
+[2023-08-06T06:27:17.845+0000] {processor.py:157} INFO - Started process (PID=7114) to work on /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:27:17.846+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/example_create_dynamic_dag.py for tasks to queue
+[2023-08-06T06:27:17.847+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.847+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:27:17.859+0000] {processor.py:836} INFO - DAG(s) dict_keys(['loop_hello_world_3', 'loop_hello_world_1', 'loop_hello_world_2']) retrieved from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:27:17.886+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.885+0000] {dag.py:2742} INFO - Sync 3 DAGs
+[2023-08-06T06:27:17.903+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.903+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_1 to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:27:17.906+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.906+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_2 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:27:17.909+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.909+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_3 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:27:17.920+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/example_create_dynamic_dag.py took 0.077 seconds
+[2023-08-06T06:28:44.813+0000] {processor.py:157} INFO - Started process (PID=7144) to work on /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:28:44.815+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/example_create_dynamic_dag.py for tasks to queue
+[2023-08-06T06:28:44.816+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.816+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:28:44.828+0000] {processor.py:836} INFO - DAG(s) dict_keys(['loop_hello_world_1', 'loop_hello_world_2', 'loop_hello_world_3']) retrieved from /opt/airflow/dags/template/example_create_dynamic_dag.py
+[2023-08-06T06:28:44.853+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.853+0000] {dag.py:2742} INFO - Sync 3 DAGs
+[2023-08-06T06:28:44.877+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.877+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_1 to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:28:44.882+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.882+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_2 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:28:44.884+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.884+0000] {dag.py:3508} INFO - Setting next_dagrun for loop_hello_world_3 to 2023-08-05T00:00:00+00:00, run_after=2023-08-06T00:00:00+00:00
+[2023-08-06T06:28:44.897+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/example_create_dynamic_dag.py took 0.088 seconds

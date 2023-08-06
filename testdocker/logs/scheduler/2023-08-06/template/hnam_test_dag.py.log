@@ -4549,3 +4549,52 @@ TypeError: missing a required argument: 'paaa'
 [2023-08-06T06:23:47.593+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:23:47.593+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2023-08-06T06:23:47.620+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:23:47.620+0000] {dag.py:3508} INFO - Setting next_dagrun for hoainam_dag to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
 [2023-08-06T06:23:47.636+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/hnam_test_dag.py took 0.121 seconds
+[2023-08-06T06:24:17.929+0000] {processor.py:157} INFO - Started process (PID=6992) to work on /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:24:17.930+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/hnam_test_dag.py for tasks to queue
+[2023-08-06T06:24:17.933+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:17.933+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:24:17.955+0000] {processor.py:836} INFO - DAG(s) dict_keys(['hoainam_dag']) retrieved from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:24:17.989+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:17.989+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:24:18.007+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:18.006+0000] {dag.py:3508} INFO - Setting next_dagrun for hoainam_dag to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:24:18.018+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/hnam_test_dag.py took 0.096 seconds
+[2023-08-06T06:24:48.383+0000] {processor.py:157} INFO - Started process (PID=7026) to work on /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:24:48.385+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/hnam_test_dag.py for tasks to queue
+[2023-08-06T06:24:48.386+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:48.386+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:24:48.398+0000] {processor.py:836} INFO - DAG(s) dict_keys(['hoainam_dag']) retrieved from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:24:48.430+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:48.430+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:24:48.449+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:24:48.449+0000] {dag.py:3508} INFO - Setting next_dagrun for hoainam_dag to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:24:48.466+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/hnam_test_dag.py took 0.086 seconds
+[2023-08-06T06:25:18.964+0000] {processor.py:157} INFO - Started process (PID=7048) to work on /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:25:18.966+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/hnam_test_dag.py for tasks to queue
+[2023-08-06T06:25:18.968+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:18.967+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:25:18.984+0000] {processor.py:836} INFO - DAG(s) dict_keys(['hoainam_dag']) retrieved from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:25:19.009+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:19.009+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:25:19.026+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:19.026+0000] {dag.py:3508} INFO - Setting next_dagrun for hoainam_dag to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:25:19.038+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/hnam_test_dag.py took 0.083 seconds
+[2023-08-06T06:25:49.509+0000] {processor.py:157} INFO - Started process (PID=7080) to work on /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:25:49.511+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/hnam_test_dag.py for tasks to queue
+[2023-08-06T06:25:49.513+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:49.512+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:25:49.536+0000] {processor.py:836} INFO - DAG(s) dict_keys(['hoainam_dag']) retrieved from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:25:49.571+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:49.571+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:25:49.593+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:25:49.593+0000] {dag.py:3508} INFO - Setting next_dagrun for hoainam_dag to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:25:49.606+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/hnam_test_dag.py took 0.105 seconds
+[2023-08-06T06:26:47.223+0000] {processor.py:157} INFO - Started process (PID=7084) to work on /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:26:47.224+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/hnam_test_dag.py for tasks to queue
+[2023-08-06T06:26:47.225+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.224+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:26:47.234+0000] {processor.py:836} INFO - DAG(s) dict_keys(['hoainam_dag']) retrieved from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:26:47.258+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.257+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:26:47.275+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:26:47.274+0000] {dag.py:3508} INFO - Setting next_dagrun for hoainam_dag to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:26:47.287+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/hnam_test_dag.py took 0.067 seconds
+[2023-08-06T06:27:17.785+0000] {processor.py:157} INFO - Started process (PID=7113) to work on /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:27:17.787+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/hnam_test_dag.py for tasks to queue
+[2023-08-06T06:27:17.791+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.790+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:27:17.800+0000] {processor.py:836} INFO - DAG(s) dict_keys(['hoainam_dag']) retrieved from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:27:17.826+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.826+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:27:17.845+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:27:17.845+0000] {dag.py:3508} INFO - Setting next_dagrun for hoainam_dag to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:27:17.856+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/hnam_test_dag.py took 0.075 seconds
+[2023-08-06T06:28:44.694+0000] {processor.py:157} INFO - Started process (PID=7143) to work on /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:28:44.695+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/template/hnam_test_dag.py for tasks to queue
+[2023-08-06T06:28:44.696+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.696+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:28:44.716+0000] {processor.py:836} INFO - DAG(s) dict_keys(['hoainam_dag']) retrieved from /opt/airflow/dags/template/hnam_test_dag.py
+[2023-08-06T06:28:44.770+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.770+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-06T06:28:44.793+0000] {logging_mixin.py:150} INFO - [2023-08-06T06:28:44.792+0000] {dag.py:3508} INFO - Setting next_dagrun for hoainam_dag to 2023-08-06T00:00:00+00:00, run_after=2023-08-07T00:00:00+00:00
+[2023-08-06T06:28:44.805+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/template/hnam_test_dag.py took 0.115 seconds
