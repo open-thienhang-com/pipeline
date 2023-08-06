@@ -1,65 +1,101 @@
+DROP TABLE IF EXISTS Customer;
+DROP TABLE IF EXISTS Product;
+DROP TABLE IF EXISTS Store;
+DROP TABLE IF EXISTS Employee;
+DROP TABLE IF EXISTS Payment;
+DROP TABLE IF EXISTS Delivery;
+DROP TABLE IF EXISTS DateOrder;
+DROP TABLE IF EXISTS Orders;
+
 CREATE TABLE Customer (
-CustomerID SERIAL PRIMARY KEY NOT NULL,
-FirstName VARCHAR(50) NOT NULL,
-LastName VARCHAR(50) NOT NULL,
-Email VARCHAR(100) NOT NULL,
-Phone VARCHAR(20) UNIQUE NOT NULL,
-Address TEXT NOT NULL,
+customer_id SERIAL PRIMARY KEY NOT NULL,
+first_name VARCHAR(50) NOT NULL,
+last_name VARCHAR(50) NOT NULL,
+sex  VARCHAR(10)  NOT NULL,
+email VARCHAR(100) NOT NULL,
+phone VARCHAR(20) UNIQUE NOT NULL,
+city VARCHAR(100) NOT NULL,
+country VARCHAR(100) NOT NULL,
+street_name VARCHAR(200) NOT NULL,
+street_number VARCHAR(20) NOT NULL,
+market_segment VARCHAR(20) NOT NULL
+
 );
 
 CREATE TABLE Product (
-ProductID SERIAL PRIMARY KEY NOT NULL,
-NameProduct VARCHAR(100) NOT NULL,
-DescriptionProduct TEXT,
-Price DECIMAL(10,2) NOT NULL,
-Stock INT NOT NULL,
+product_id SERIAL PRIMARY KEY NOT NULL,
+name_product VARCHAR(100) NOT NULL,
+description_product TEXT,
+price DECIMAL(10,2) NOT NULL,
+stock INT NOT NULL,
+product_size VARCHAR(10) NOT NULL,
+product_category VARCHAR(20) NOT NULL,
+brand VARCHAR(50) NOT NULL,
+inventory_status VARCHAR(50) NOT NULL,
+sales_type VARCHAR(50) NOT NULL,
+discount_type VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Store (
-StoreID SERIAL PRIMARY KEY NOT NULL,
-NameStore VARCHAR(100) NOT NULL,
-AddressStore TEXT NOT NULL,
+store_id SERIAL PRIMARY KEY NOT NULL,
+name_store VARCHAR(100) NOT NULL,
+city VARCHAR(100) NOT NULL,
+country VARCHAR(100) NOT NULL,
+street_name VARCHAR(200) NOT NULL,
+street_number VARCHAR(20) NOT NULL,
+store_manager  VARCHAR(200) NOT NULL
+
 );
 
 CREATE TABLE Employee (
-EmployeeID SERIAL PRIMARY KEY NOT NULL,
-FirstName VARCHAR(50) NOT NULL,
-LastName VARCHAR(50) NOT NULL,
-Position VARCHAR(50) NOT NULL,
+employee_id SERIAL PRIMARY KEY NOT NULL,
+employee_name VARCHAR(200) NOT NULL,
+city VARCHAR(100) NOT NULL,
+country VARCHAR(100) NOT NULL,
+street_name VARCHAR(200) NOT NULL,
+street_number VARCHAR(20) NOT NULL,
+sex VARCHAR(10)  NOT NULL,
+age INT NOT NULL,
+salary_Level VARCHAR(20) NOT NULL,
+status VARCHAR(20) NOT NULL,
+star_work_day TIMESTAMP,
+education_level VARCHAR(20) NOT NULL,
+last_rating DECIMAL(4,2) NOT NULL
 );
 
 CREATE TABLE Payment (
-PaymentID SERIAL PRIMARY KEY NOT NULL,
-PaymentMethod VARCHAR(50) NOT NULL,
+payment_id SERIAL PRIMARY KEY NOT NULL,
+payment_method VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Delivery (
-DeliveryID SERIAL PRIMARY KEY NOT NULL,
-DeliveryMethod VARCHAR(50) NOT NULL,
-DeliveryPrice DECIMAL(10,2) NOT NULL,
+delivery_id SERIAL PRIMARY KEY NOT NULL,
+delivery_method VARCHAR(50) NOT NULL,
+delivery_price DECIMAL(10,2) NOT NULL
 );
 
-CREATE TABLE Date (
-DateID SERIAL PRIMARY KEY NOT NULL,
-DateTime TIMESTAMP NOT NULL,
+CREATE TABLE DateOrder (
+dateorder_id SERIAL PRIMARY KEY NOT NULL,
+datetime TIMESTAMP NOT NULL
+
 );
 
-CREATE TABLE Order (
-OrderID SERIAL PRIMARY KEY NOT NULL,
-CustomerID INT NOT NULL,
-ProductID INT NOT NULL,
-StoreID INT NOT NULL,
-EmployeeID INT NOT NULL,
-PaymentID INT NOT NULL,
-DeliveryID INT NOT NULL,
-DateID INT NOT NULL,
-TotalAmountOrder DECIMAL(12,2) NOT NULL,
-CONSTRAINT fk_Order_Customer FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID),
-CONSTRAINT fk_Order_Product FOREIGN KEY (ProductID) REFERENCES Product(ProductID),
-CONSTRAINT fk_Order_Store FOREIGN KEY (StoreID) REFERENCES Store(StoreID),
-CONSTRAINT fk_Order_Employee FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID),
-CONSTRAINT fk_Order_Payment FOREIGN KEY (PaymentID) REFERENCES Payment(PaymentID),
-CONSTRAINT fk_Order_Delivery FOREIGN KEY (DeliveryID) REFERENCES Delivery(DeliveryID),
-CONSTRAINT fk_Order_Date FOREIGN KEY (DateID) REFERENCES Date(DateID),
+CREATE TABLE Orders (
+order_id SERIAL PRIMARY KEY NOT NULL,
+customer_id INT NOT NULL,
+product_id INT NOT NULL,
+store_id INT NOT NULL,
+employee_id INT NOT NULL,
+payment_id INT NOT NULL,
+delivery_id INT NOT NULL,
+dateorder_id INT NOT NULL,
+total_amount_order DECIMAL(12,2) NOT NULL,
+CONSTRAINT fk_Order_Customer FOREIGN KEY (customer_id) REFERENCES Customer(customer_id),
+CONSTRAINT fk_Order_Product FOREIGN KEY (product_id) REFERENCES Product(product_id),
+CONSTRAINT fk_Order_Store FOREIGN KEY (store_id) REFERENCES Store(store_id),
+CONSTRAINT fk_Order_Employee FOREIGN KEY (employee_id) REFERENCES Employee(employee_id),
+CONSTRAINT fk_Order_Payment FOREIGN KEY (payment_id) REFERENCES Payment(payment_id),
+CONSTRAINT fk_Order_Delivery FOREIGN KEY (delivery_id) REFERENCES Delivery(delivery_id),
+CONSTRAINT fk_Order_Date FOREIGN KEY (dateorder_id) REFERENCES DateOrder(dateorder_id)
 );
 
