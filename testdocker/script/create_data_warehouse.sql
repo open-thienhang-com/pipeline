@@ -32,8 +32,7 @@ product_size VARCHAR(10) NOT NULL,
 product_category VARCHAR(20) NOT NULL,
 brand VARCHAR(50) NOT NULL,
 inventory_status VARCHAR(50) NOT NULL,
-sales_type VARCHAR(50) NOT NULL,
-discount_type VARCHAR(50) NOT NULL
+sales_type VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Store (
@@ -75,7 +74,7 @@ delivery_price DECIMAL(10,2) NOT NULL
 );
 
 CREATE TABLE DateOrder (
-dateorder_id SERIAL PRIMARY KEY NOT NULL,
+date_order_id SERIAL PRIMARY KEY NOT NULL,
 datetime TIMESTAMP NOT NULL
 
 );
@@ -88,14 +87,18 @@ store_id INT NOT NULL,
 employee_id INT NOT NULL,
 payment_id INT NOT NULL,
 delivery_id INT NOT NULL,
-dateorder_id INT NOT NULL,
+date_order_id INT NOT NULL,
 total_amount_order DECIMAL(12,2) NOT NULL,
+discount_amount DECIMAL(12,2) DEFAULT 0,
+discount_percent DECIMAL(4,2) DEFAULT 0,
+discount_code VARCHAR(50) DEFAULT '',
+discount_type VARCHAR(50) DEFAULT '',
 CONSTRAINT fk_Order_Customer FOREIGN KEY (customer_id) REFERENCES Customer(customer_id),
 CONSTRAINT fk_Order_Product FOREIGN KEY (product_id) REFERENCES Product(product_id),
 CONSTRAINT fk_Order_Store FOREIGN KEY (store_id) REFERENCES Store(store_id),
 CONSTRAINT fk_Order_Employee FOREIGN KEY (employee_id) REFERENCES Employee(employee_id),
 CONSTRAINT fk_Order_Payment FOREIGN KEY (payment_id) REFERENCES Payment(payment_id),
 CONSTRAINT fk_Order_Delivery FOREIGN KEY (delivery_id) REFERENCES Delivery(delivery_id),
-CONSTRAINT fk_Order_Date FOREIGN KEY (dateorder_id) REFERENCES DateOrder(dateorder_id)
+CONSTRAINT fk_Order_Date FOREIGN KEY (date_order_id) REFERENCES DateOrder(date_order_id)
 );
 
