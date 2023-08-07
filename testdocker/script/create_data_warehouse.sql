@@ -6,12 +6,15 @@ DROP TABLE IF EXISTS Payment;
 DROP TABLE IF EXISTS Delivery;
 DROP TABLE IF EXISTS DateOrder;
 DROP TABLE IF EXISTS Orders;
+DROP TABLE IF EXISTS Campaign;
+DROP TABLE IF EXISTS Strategy;
+DROP TABLE IF EXISTS Discount_Type;
+DROP TABLE IF EXISTS Discount_Value;
 
 CREATE TABLE Customer (
 customer_id SERIAL PRIMARY KEY NOT NULL,
-first_name VARCHAR(50) NOT NULL,
-last_name VARCHAR(50) NOT NULL,
-sex  VARCHAR(10)  NOT NULL,
+customer_name VARCHAR(200) NOT NULL,
+gender  VARCHAR(10)  NOT NULL,
 email VARCHAR(100) NOT NULL,
 phone VARCHAR(20) UNIQUE NOT NULL,
 city VARCHAR(100) NOT NULL,
@@ -19,7 +22,6 @@ country VARCHAR(100) NOT NULL,
 street_name VARCHAR(200) NOT NULL,
 street_number VARCHAR(20) NOT NULL,
 market_segment VARCHAR(20) NOT NULL
-
 );
 
 CREATE TABLE Product (
@@ -43,7 +45,6 @@ country VARCHAR(100) NOT NULL,
 street_name VARCHAR(200) NOT NULL,
 street_number VARCHAR(20) NOT NULL,
 store_manager  VARCHAR(200) NOT NULL
-
 );
 
 CREATE TABLE Employee (
@@ -53,7 +54,7 @@ city VARCHAR(100) NOT NULL,
 country VARCHAR(100) NOT NULL,
 street_name VARCHAR(200) NOT NULL,
 street_number VARCHAR(20) NOT NULL,
-sex VARCHAR(10)  NOT NULL,
+gender VARCHAR(10)  NOT NULL,
 age INT NOT NULL,
 salary_Level VARCHAR(20) NOT NULL,
 status VARCHAR(20) NOT NULL,
@@ -79,9 +80,33 @@ datetime TIMESTAMP NOT NULL
 
 );
 
-CREATE TABLE Discount (
-discount_id SERIAL PRIMARY KEY NOT NULL,
+CREATE TABLE Campaign (
+campaign_id SERIAL PRIMARY KEY NOT NULL,
+time_start TIMESTAMP,
+time_end TIMESTAMP,
+quality INT NOT NULL,
+description VARCHAR(255) NOT NULL,
+status VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE Strategy (
+strategy_id SERIAL PRIMARY KEY NOT NULL,
 discount_type VARCHAR(50) NOT NULL,
+time_start TIMESTAMP,
+time_end TIMESTAMP,
+status VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE Discount_Type (
+discount_type_id SERIAL PRIMARY KEY NOT NULL,
+quality_discount INT NOT NULL,
+description VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Discount_Value (
+discount_value_id SERIAL PRIMARY KEY NOT NULL,
+value_discount DECIMAL(10,2) NOT NULL,
+maximum_discount_amount DECIMAL(10,2) NOT NULL
 );
 
 CREATE TABLE Orders (
@@ -93,16 +118,23 @@ employee_id INT NOT NULL,
 payment_id INT NOT NULL,
 delivery_id INT NOT NULL,
 date_order_id INT NOT NULL,
-discount_id INT NOT NULL,
+campaign_id INT NOT NULL,
+strategy_id INT NOT NULL,
+discount_type_id INT NOT NULL,
+discount_value_id INT NOT NULL,
 total_amount_order DECIMAL(12,2) NOT NULL,
 discount_amount DECIMAL(12,2) DEFAULT 0,
-CONSTRAINT fk_Order_Customer FOREIGN KEY (customer_id) REFERENCES Customer(customer_id),
-CONSTRAINT fk_Order_Product FOREIGN KEY (product_id) REFERENCES Product(product_id),
-CONSTRAINT fk_Order_Store FOREIGN KEY (store_id) REFERENCES Store(store_id),
-CONSTRAINT fk_Order_Employee FOREIGN KEY (employee_id) REFERENCES Employee(employee_id),
-CONSTRAINT fk_Order_Payment FOREIGN KEY (payment_id) REFERENCES Payment(payment_id),
-CONSTRAINT fk_Order_Delivery FOREIGN KEY (delivery_id) REFERENCES Delivery(delivery_id),
-CONSTRAINT fk_Order_Discount FOREIGN KEY (discount_id) REFERENCES Discount(discount_id),
-CONSTRAINT fk_Order_Date FOREIGN KEY (date_order_id) REFERENCES DateOrder(date_order_id)
+CONSTRAINT fk_order_customer FOREIGN KEY (customer_id) REFERENCES Customer(customer_id),
+CONSTRAINT fk_order_product FOREIGN KEY (product_id) REFERENCES Product(product_id),
+CONSTRAINT fk_order_store FOREIGN KEY (store_id) REFERENCES Store(store_id),
+CONSTRAINT fk_order_employee FOREIGN KEY (employee_id) REFERENCES Employee(employee_id),
+CONSTRAINT fk_order_payment FOREIGN KEY (payment_id) REFERENCES Payment(payment_id),
+CONSTRAINT fk_order_delivery FOREIGN KEY (delivery_id) REFERENCES Delivery(delivery_id),
+CONSTRAINT fk_order_date FOREIGN KEY (date_order_id) REFERENCES DateOrder(date_order_id),
+CONSTRAINT fk_order_campaign FOREIGN KEY (campaign_id) REFERENCES Campaign(campaign_id),
+CONSTRAINT fk_order_strategy FOREIGN KEY (strategy_id) REFERENCES Strategy(strategy_id),
+CONSTRAINT fk_order_discount_type FOREIGN KEY (discount_type_id) REFERENCES Discount_Type(discount_type_id),
+CONSTRAINT fk_order_discount_value FOREIGN KEY (discount_value_id) REFERENCES Discount_Value(discount_value_id)
 );
+
 

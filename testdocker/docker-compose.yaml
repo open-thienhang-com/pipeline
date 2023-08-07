@@ -254,6 +254,22 @@ services:
       - -c
       - airflow
 
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4:latest
+    depends_on:
+      - postgres
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_MAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_PW}
+    ports:
+      - "9000:80"
+    restart: always
+    volumes:
+    - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - postgres_network
+
   flower:
     <<: *airflow-common
     command: celery flower
@@ -271,4 +287,8 @@ services:
         condition: service_completed_successfully
 
 volumes:
+  pgadmin_data:
   postgres-db-volume:
+networks:
+  postgres_network:
+    driver: bridge
