@@ -84,6 +84,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
+      - ./scripts/:/docker-entrypoint-initdb.d/
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "airflow"]
       interval: 5s
@@ -269,9 +270,23 @@ services:
       - "9000:80"
     restart: always
     volumes:
-    - pgadmin_data:/var/lib/pgadmin
+      - ./scripts/:/docker-entrypoint-initdb.d/
+      - pgadmin_data:/var/lib/pgadmin
     networks:
       - postgres_network
+
+  jupyter-notebook:
+    container_name: python_notebook
+    image: jupyter/datascience-notebook:latest
+    environment:
+      - JUPYTER_TOKEN=thienhang
+    labels:
+      description: Jupyter Notebooks
+      name: jupyter notebook  
+    ports:
+      - "8888:8888"
+    volumes:
+      - ~/Documents/notebooks:/home/notebooks
 
   flower:
     <<: *airflow-common

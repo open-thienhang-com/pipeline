@@ -14,4 +14,4 @@ rich_click
 semver
 tabulate
 requests
-gusty==0.3.3
+gusty==0.3.3 

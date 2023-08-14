@@ -112,29 +112,39 @@ maximum_discount_amount DECIMAL(10,2) NOT NULL
 CREATE TABLE Orders (
 order_id SERIAL PRIMARY KEY NOT NULL,
 customer_id INT NOT NULL,
-product_id INT NOT NULL,
+-- product_id INT NOT NULL,
+price_history_id INT NOT NULL,
 store_id INT NOT NULL,
 employee_id INT NOT NULL,
 payment_id INT NOT NULL,
 delivery_id INT NOT NULL,
 date_order_id INT NOT NULL,
-campaign_id INT NOT NULL,
-strategy_id INT NOT NULL,
-discount_type_id INT NOT NULL,
-discount_value_id INT NOT NULL,
+campaign_id INT ,
+strategy_id INT ,
+discount_type_id INT ,
+discount_value_id INT ,
 total_amount_order DECIMAL(12,2) NOT NULL,
 discount_amount DECIMAL(12,2) DEFAULT 0,
 CONSTRAINT fk_order_customer FOREIGN KEY (customer_id) REFERENCES Customer(customer_id),
-CONSTRAINT fk_order_product FOREIGN KEY (product_id) REFERENCES Product(product_id),
+--CONSTRAINT fk_order_product FOREIGN KEY (product_id) REFERENCES Product(product_id),
+CONSTRAINT fk_order_history_product FOREIGN KEY (price_history_id) REFERENCES price_history(price_history_id),
 CONSTRAINT fk_order_store FOREIGN KEY (store_id) REFERENCES Store(store_id),
 CONSTRAINT fk_order_employee FOREIGN KEY (employee_id) REFERENCES Employee(employee_id),
 CONSTRAINT fk_order_payment FOREIGN KEY (payment_id) REFERENCES Payment(payment_id),
 CONSTRAINT fk_order_delivery FOREIGN KEY (delivery_id) REFERENCES Delivery(delivery_id),
 CONSTRAINT fk_order_date FOREIGN KEY (date_order_id) REFERENCES DateOrder(date_order_id),
-CONSTRAINT fk_order_campaign FOREIGN KEY (campaign_id) REFERENCES Campaign(campaign_id),
-CONSTRAINT fk_order_strategy FOREIGN KEY (strategy_id) REFERENCES Strategy(strategy_id),
-CONSTRAINT fk_order_discount_type FOREIGN KEY (discount_type_id) REFERENCES Discount_Type(discount_type_id),
-CONSTRAINT fk_order_discount_value FOREIGN KEY (discount_value_id) REFERENCES Discount_Value(discount_value_id)
 );
 
 
+--Fact history change price product
+CREATE TABLE price_history (
+price_history_id SERIAL PRIMARY KEY NOT NULL,
+product_id INT NOT NULL,
+price_change DECIMAL(10,2) NOT NULL,
+date_change_price TIMESTAMP NOT NULL,
+CONSTRAINT fk_price_history_product FOREIGN KEY (product_id) REFERENCES Product(product_id)
+);
+-- SELECT updated_at
+--FROM table_name
+--ORDER BY date_change_price DESC
+--LIMIT 1;

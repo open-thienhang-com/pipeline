@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION discount_order(customer_name_buy VARCHAR(100),list_product_id INT[],store VARCHAR(100),employee VARCHAR(100), payment_order VARCHAR(50), delivery_order VARCHAR(50), campaign_id_order INT,strategy_id_order INT, discount_type_id INT, discount_order_value_id INT  ) RETURNS INT AS
+CREATE OR REPLACE FUNCTION discount_order(customer_name_buy VARCHAR(100),list_product_id INT[],store_name VARCHAR(100),name_employee INT, payment_order VARCHAR(50), delivery_order VARCHAR(50), campaign_id_order INT,strategy_id_order INT, discount_type_id INT, discount_order_value_id INT  ) RETURNS INT AS
 $$
 DECLARE
     customer_record customer;
@@ -16,25 +16,44 @@ DECLARE
 BEGIN
     --Xác định thông tin khách hàng, khoá lại cho đến khi xong
     SELECT * INTO customer_record FROM customer WHERE customer_name = customer_name_buy LIMIT 1 FOR UPDATE;
+	RAISE NOTICE 'Xác định thông tin khách hàng, khoá lại cho đến khi xong';
+	
       --Xác định thông tin nhân viên 
-    SELECT * INTO employee_record FROM employee WHERE employee_name = employee;
+    SELECT * INTO employee_record FROM employee WHERE employee_id = name_employee;
+	RAISE NOTICE 'Value employee parameter: %', name_employee;
+	RAISE NOTICE 'Value employee_record : %', employee_record;
+	RAISE NOTICE 'Xác định thông tin nhân viên ';
+	
       --Xác định thông tin cửa hàng
-    SELECT * INTO store_record FROM store WHERE name_store = store;
+    SELECT * INTO store_record FROM store WHERE name_store = store_name;
+	RAISE NOTICE 'Xác định thông tin cửa hàng';
+	
     -- Xác định phương thức thanh toán 
     SELECT * INTO payment_record FROM payment WHERE payment_method = payment_order;
+	 RAISE NOTICE 'Xác định phương thức thanh toán ';
+	 
     -- Xác định phương thức vận chuyển
     SELECT * INTO delivery_record FROM delivery WHERE delivery_method = delivery_order;
+	RAISE NOTICE 'Xác định phương thức vận chuyển';
+	
     -- Xác định giá trị giảm giá
     SELECT * INTO discount_value_record FROM discount_value WHERE discount_value_id = discount_order_value_id;
+	RAISE NOTICE 'Xác định giá trị giảm giá';
+	
      -- Xác định chiến dịch 
     SELECT * INTO campaign_record FROM campaign WHERE campaign_id = campaign_id_order;
+	RAISE NOTICE 'Xác định chiến dịch ';
+	
      -- Xác định chiến lược
     SELECT * INTO strategy_record FROM strategy WHERE strategy_id = strategy_id_order;
+	RAISE NOTICE 'Xác định chiến lược';
+	
     -- Tính tiền tất cả sản phẩm trong danh sách sản phẩm mua 
     SELECT SUM(price) INTO total_cost
     FROM product
     WHERE product_id = ANY(list_product_id);
-    
+    RAISE NOTICE 'Tính tiền tất cả sản phẩm trong danh sách sản phẩm mua ';
+	
     --Kiểm tra xem khuyến mãi có đang chạy không
     IF campaign_record.status = 'In progress' AND strategy_record.status = 'In progress' THEN
         CASE discount_type_id
@@ -65,8 +84,8 @@ BEGIN
             total_cost=total_cost - discount_value_record.value_discount;
         WHEN 10 THEN 
             total_cost=total_cost - discount_value_record.value_discount;
-        END;
-    ELSE
+        END CASE;
+    ELSE 
         RAISE NOTICE 'Promotion has expired';
     END IF;
 
@@ -107,5 +126,6 @@ EXCEPTION
 END;
 $$
 LANGUAGE plpgsql;
--- SELECT discount_order('TranHoangM', ARRAY [1,2,3] , 'HihiStore7Amazon', 'LeThiN', 'Cash', 'Home delivery', 1, 1, 1, 1);
--- (1, unnest(ARRAY[1,2,3]), 1, 1, 1, 1, 1, 1,1,1,1,1,15,10)
+--SELECT discount_order('TranHoangM', ARRAY [1,2,3] , 'HihiStore7Amazon', 1, 'Cash', 'Home delivery', 1, 1, 1, 1);
+--SELECT * INTO employee_record1 FROM employee WHERE employee_id = 1;
+--select * from employee_record1
