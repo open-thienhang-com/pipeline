@@ -286,7 +286,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ~/Documents/notebooks:/home/notebooks
+      - ./dags:/opt/airflow/dags/notebooks:/home/notebooks
 
   flower:
     <<: *airflow-common

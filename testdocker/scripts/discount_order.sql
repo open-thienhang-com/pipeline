@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION discount_order(customer_name_buy VARCHAR(100),list_product_id INT[],store_name VARCHAR(100),name_employee INT, payment_order VARCHAR(50), delivery_order VARCHAR(50), campaign_id_order INT,strategy_id_order INT, discount_type_id INT, discount_order_value_id INT  ) RETURNS INT AS
+CREATE OR REPLACE FUNCTION discount_order(customer_name_buy VARCHAR(100),list_product_id INT[],store_name VARCHAR(100),id_employee INT, payment_order VARCHAR(50), delivery_order VARCHAR(50), campaign_id_order INT,strategy_id_order INT, discount_type_id INT, discount_order_value_id INT  ) RETURNS INT AS
 $$
 DECLARE
     customer_record customer;
@@ -19,8 +19,8 @@ BEGIN
 	RAISE NOTICE 'Xác định thông tin khách hàng, khoá lại cho đến khi xong';
 	
       --Xác định thông tin nhân viên 
-    SELECT * INTO employee_record FROM employee WHERE employee_id = name_employee;
-	RAISE NOTICE 'Value employee parameter: %', name_employee;
+    SELECT * INTO employee_record FROM employee WHERE employee_id = id_employee;
+	RAISE NOTICE 'Value employee parameter: %', id_employee;
 	RAISE NOTICE 'Value employee_record : %', employee_record;
 	RAISE NOTICE 'Xác định thông tin nhân viên ';
 	

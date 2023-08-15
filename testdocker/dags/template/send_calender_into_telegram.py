@@ -54,22 +54,24 @@ import subprocess
 
 # get_data_database()
 
-@dag(start_date=datetime.datetime(2023, 7, 1), schedule="@daily")
-def get_backup_database():
-    @task(task_id='get_backup')
-    def get_backup():
-        command = ['pg_dump','"host=host.docker.internal port=5432 dbname=airflow user=airflow password=airflow"', '>', 'dags/mydb_export.sql']
-        try:
-            process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
-            output, err = process.communicate()
-            print('Hello World')
-            print(output)
-            # if err:
-            #     raise Exception(err)
-            # with open('dags/mydb_export.sql', 'wb') as f:
-            #     f.write(output)
-        except Exception as error:
-            print(error)
-    get_backup() 
-get_backup_database()
+# @dag(start_date=datetime.datetime(2023, 7, 1), schedule="@daily")
+# def get_backup_database():
+#     @task(task_id='get_backup')
+#     def get_backup():
+#         # command = ['pg_dump','"host=host.docker.internal port=5432 dbname=airflow user=airflow password=airflow"', '>', 'dags/mydb_export.sql']
+#         try:
+#             # process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
+#             get_back_up = subprocess.run(["mkdir", "dags/hoaia1212"])  #run cho nay
+#             # run khac gi vs subprocess vs open
+#             # output, err = process.communicate()
+#             print('Hello World')
+#             # print(output)
+#             # if err:
+#             #     raise Exception(err)
+#             # with open('dags/mydb_export.sql', 'wb') as f:
+#             #     f.write(output)
+#         except Exception as error:
+#             print(error)
+#     get_backup() 
+# get_backup_database()
 
